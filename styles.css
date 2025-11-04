@@ -476,6 +476,17 @@ footer
   border-radius: 55px;
   background-color: orange;
 }
+
+.foot-img1
+{
+  border: 5px solid white;
+  border-width: 5px 7px 5px 7px white;
+}
+.foot-img2
+{
+  border: 2px solid white;
+  border-width: 15px white;
+}
 /* media query */
 
 @media (max-width: 768px) 
