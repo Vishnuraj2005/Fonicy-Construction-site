@@ -491,6 +491,11 @@ footer
 
 @media (max-width: 768px) 
 {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
     /* black-bar */
     .black-bar
     {
@@ -512,6 +517,11 @@ footer
        align-self: center;
     }
     /* carousel */
+
+    .main-page
+    {
+      /* width: 650px; */
+    }
   .custom-caption button 
   {
     display: none;
@@ -519,9 +529,19 @@ footer
 
   /* services */
 
+  .services
+  {
+    width: 500px;
+  }
+
   .boxes-cont
   {
     flex-direction: column;
+  }
+  .service-box
+  {
+    width: 300px;
+    text-wrap: wrap;
   }
 
   /* about us */
@@ -550,6 +570,10 @@ footer
     padding: 20px;
   }
 
+  .Filter
+  {
+    text-wrap:wrap
+  }
 
   .projects .flex-cont {
     display: flex;
@@ -561,7 +585,7 @@ footer
 
   
   .projects .carousel {
-    width: 100%;
+    width: 90%;
   }
 
  
@@ -605,6 +629,13 @@ footer
   }
 
   /* testimonal */
+
+  .testimonal
+  {
+    width: 550px;
+    /* margin-left: 15px; */
+    padding: 10px;
+  }
 
   .test1
   {
@@ -653,16 +684,37 @@ footer
     margin-bottom: 30px;
   }
 
-  .map
+  .map iframe
   {
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    width: 525px;
   }
 /* footer */
+
+footer
+{
+  text-align: center;
+  width: 500px;
+  /* margin-left: 15px; */
+
+}
+
   .foot-contact
   {
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    /* width: 400px; */
+  }
+
+  .call i
+  {
+    margin-left: -80px;
+  }
+
+  .mail i
+  {
+    margin-left: -100px;
   }
 
   .foot-main
