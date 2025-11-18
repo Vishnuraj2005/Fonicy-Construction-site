@@ -632,7 +632,7 @@ footer
 
   .testimonal
   {
-    width: 550px;
+    /* width: 550px; */
     /* margin-left: 15px; */
     padding: 10px;
   }
@@ -640,6 +640,8 @@ footer
   .test1
   {
     height: 300px;
+    /* margin-left: -10px; */
+    padding: 16px;
   }
 
   .test-cont img
@@ -649,7 +651,19 @@ footer
    margin-left:-0px;
   }
 
+  .client-pic img
+  {
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+  }
+
   /* why choose */
+
+  .WhyChooseus
+  {
+    margin-left: 15px;
+  }
 
   .why1
   {
@@ -686,7 +700,7 @@ footer
 
   .map iframe
   {
-    /* margin-left: 15px; */
+    margin-left: 15px;
     width: 525px;
   }
 /* footer */
@@ -694,7 +708,7 @@ footer
 footer
 {
   text-align: center;
-  width: 500px;
+  /* width: 500px; */
   /* margin-left: 15px; */
 
 }
