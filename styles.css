@@ -1,5 +1,4 @@
 /* blackbar */
-
 .black-bar
 {
     display: flex;
@@ -471,12 +470,11 @@ footer
 }
 .foot-social
 {
-  border: 2px solid orange;
+  border: 5px solid orange;
   padding: 10px;
   border-radius: 55px;
   background-color: orange;
 }
-
 .foot-img1
 {
   border: 5px solid white;
@@ -489,103 +487,194 @@ footer
 }
 /* media query */
 
-/* ----------------------------- */
-/* Responsive breakpoints (all sizes)
-   - 1200px: large desktops / small screens
-   - 992px : small desktops / large tablets
-   - 768px : tablets / portrait
-   - 480px : small phones
-*/
+@media (max-width: 768px) 
+{
+    /* black-bar */
+    .black-bar
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+    }
+    .bb-icon
+    {
+        display:none;
+    }
+    .bb-drop
+    {
+        display: none;
+    }
+    .bb-social
+    {
+       align-self: center;
+    }
+    /* carousel */
+  .custom-caption button 
+  {
+    display: none;
+  }
 
-@media (max-width: 1200px) {
-  .services { padding: 30px; margin: 30px; }
-  .about { width: 600px; }
-  .flex-cont { width: 700px; gap: 30px;}
-  .boxes-cont { gap: 18px; }
-  .card { width: 360px; }
-  .custom-caption h1 { font-size: 44px; }
-  .pro-head h1 { font-size: 34px; }
+  /* services */
+
+  .boxes-cont
+  {
+    flex-direction: column;
+  }
+
+  /* about us */
+
+  .about-us
+  {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+
+  }
+  .about
+  {
+    margin-left: 50px;
+    text-wrap: wrap;
+    width: 500px;
+  }
+ .abou-img
+ {
+  margin-left: 30px;
+ }
+
+  /* projects */
+
+.projects {
+    padding: 20px;
+  }
+
+
+  .projects .flex-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  
+  .projects .carousel {
+    width: 100%;
+  }
+
+ 
+  .projects .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .projects .card-body {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .projects .card-body h4 {
+    font-size: 18px;
+  }
+
+  .projects .card-body p {
+    font-size: 14px;
+  }
+
+ 
+  .projects .pro-head h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+ 
+  .projects .Filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .projects .Filter p {
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  /* testimonal */
+
+  .test1
+  {
+    height: 300px;
+  }
+
+  .test-cont img
+  {
+   width: 70px;
+   /* z-index: 5; */
+   margin-left:-0px;
+  }
+
+  /* why choose */
+
+  .why1
+  {
+    flex-direction: column;
+    text-wrap: wrap;
+    text-align: start;
+  }
+  .why1-cont
+  {
+    width: 500px;
+    text-align: justify;
+    margin-right: 300px;
+
+  }
+  .why1-img
+  {
+ margin-right: 640px;
+ /* margin-bottom: 30px; */
+  }
+
+  /* contact */
+
+  .contacts
+  {
+    flex-direction: column;
+    align-items: start;
+   
+  }
+
+  .ip
+  {
+    margin-bottom: 30px;
+  }
+
+  .map
+  {
+    margin-left: 15px;
+  }
+/* footer */
+  .foot-contact
+  {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .foot-main
+  {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .foot-last
+  {
+    flex-direction: column;
+    gap: 30px;
+  }
+
 }
-
-@media (max-width: 992px) {
-  .services { padding: 28px; margin: 24px;flex-wrap: wrap; }
-  .services p{ text-wrap: wrap; }
-  .about { width: 520px; margin-left: 20px;flex-wrap: wrap; }
-  .about p{ text-wrap: wrap; }
-  .flex-cont { width: 640px; gap: 28px;}
-  .card { width: 320px; }
-  .custom-caption h1 { font-size: 36px; }
-  .pro-head h1 { font-size: 30px; }
-  .why1 { width: 700px; }
-  .foot-contact { gap: 200px; font-size: 18px; padding-top: 60px; }
-  .Filter { flex-wrap: wrap; justify-content: center; gap: 30px; }
-}
-
-@media (max-width: 768px) {
-  *{ margin: 0; padding: 0; box-sizing: border-box; }
-  .black-bar { flex-direction: column; justify-content: center; align-items: start; gap: 20px; }
-  .bb-icon, .bb-drop { display: none; }
-  .bb-social { align-self: center; }
-  .custom-caption button { display: none; }
-  .services { width: 500px;flex-wrap: wrap; }
-  .services p{ text-wrap: wrap; }
-  .boxes-cont { flex-direction: column; }
-  .service-box { width: 300px; text-wrap: wrap; }
-  .about-us { flex-direction: column; align-items: start; justify-content: center; }
-  .about { margin-left: 50px; text-wrap: wrap; width: 500px;flex-wrap: wrap; }
-  .about p{ text-wrap: wrap; }
-  .abou-img { margin-left: 30px; }
-  .projects { padding: 20px; }
-  .projects .flex-cont { display: flex; flex-direction: column; justify-content: start; align-items: center; gap: 30px; }
-  .projects .carousel { width: 90%; }
-  .projects .card img { height: 200px; object-fit: cover; }
-  .projects .card-body { text-align: center; padding: 15px; }
-  .projects .pro-head h1 { font-size: 26px; text-align: center; }
-  .testimonal { padding: 10px; }
-  .test1 { height: 300px; padding: 16px; }
-  .test-cont img { width: 70px; margin-left: 0; }
-  .client-pic img { width: 50px; height: 50px; margin-top: -20px; }
-  .WhyChooseus { margin-left: 15px; }
-  .why1 { flex-direction: column; text-wrap: wrap; text-align: start; }
-  .why1-cont { width: 500px; text-align: justify; margin-right: 300px; }
-  .why1-img { margin-right: 640px; }
-  .contacts { flex-direction: column; align-items: start; }
-  .ip { margin-bottom: 30px; }
-  .map iframe { margin-left: 15px; width: 525px; }
-  footer { text-align: center; }
-  .foot-contact { flex-direction: column; gap: 30px; align-items: center; }
-  .call i { margin-left: -80px; }
-  .mail i { margin-left: -100px; }
-  .foot-main { flex-direction: column; align-items: center; gap: 50px; }
-  .foot-last { flex-direction: column; gap: 30px; }
-  .Filter { flex-wrap: wrap; justify-content: center; gap: 20px; }
-}
-
-@media (max-width: 480px) {
-  img { max-width: 100%; height: auto; display: block; }
-  .black-bar { flex-direction: column; justify-content: center; align-items: center; gap: 10px; padding: 10px; }
-  .bb-icon, .bb-drop { display: none; }
-  .orange-bar1, .orange-bar2 { display: none; }
-  .services p{ text-wrap: wrap; }
-  .services { padding: 20px; margin: 20px;flex-wrap: wrap; }
-  .boxes-cont { flex-direction: column; gap: 10px; padding: 0 10px; width: 100%; }
-  .service-box { width: 100%; padding: 10px; }
-  .about-us { flex-direction: column; align-items: center; gap: 10px; padding: 10px; }
-  .about { width: 100%; margin: 0 10px;flex-wrap: wrap; }
-  .about p{ text-wrap: wrap; }
-  .abou-img { margin: 0 10px; }
-  .flex-cont { width: 100%; gap: 20px; padding-top: 20px; flex-direction: column; align-items: center; }
-  .card { width: 100%; max-width: 420px; }
-  .test1 { width: 100%; padding: 20px; margin-bottom: 40px; }
-  .test-cont img, .client-pic img { position: static; margin: 0 auto 10px auto; display: block; }
-  .ip input { width: 100%; max-width: 100%; box-sizing: border-box; }
-  .map iframe { width: 100%; height: auto; }
-  footer { text-align: center; }
-  .foot-main, .foot-contact, .foot-last { flex-direction: column; align-items: center; gap: 20px; }
-  .foot-i { justify-content: center; }
-  .Filter { flex-direction: column; gap: 15px; justify-content: center;  align-items: center;}
-}
-
-
-
  
